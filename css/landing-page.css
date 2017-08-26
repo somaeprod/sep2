@@ -164,3 +164,165 @@ footer {
 p.copyright {
     margin: 15px 0 0;
 }
+
+
+
+
+
+
+
+
+==================================== */
+
+
+@media(min-width:200px) {
+        h3 {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        font-size: 12px;
+        line-height: 12px;
+    }
+}
+
+@media(min-width:400px) {
+        h3 {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        font-size: 18px;
+        line-height: 18px;
+        
+    }
+}
+
+@media(min-width:600px) {
+    
+        h3 {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        font-size: 22px;
+        line-height: 22px;
+        
+    }
+}
+
+@media(min-width:800px) {
+    
+        h3 {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        font-size: 28px;
+        line-height: 28px;
+        
+    }
+}
+
+@media(min-width:1000px) {
+    
+        h3 {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        font-size: 32px;
+        line-height: 32px;
+        
+    }
+}
+
+
+/* ================================== */
+
+
+@media(min-width:200px) {
+        .btn {
+        border::1px;
+        display:inline-block;
+        outline:0;
+        padding:8px 10px;
+        vertical-align:middle;
+        overflow:hidden;
+        text-decoration:none;
+
+        
+        text-align:center;
+        cursor:pointer;
+        white-space:nowrap
+        font-size: 10px;
+    }
+}
+
+@media(min-width:400px) {
+        .btn {
+        border::1px;
+        display:inline-block;
+        outline:0;
+        padding:8px 10px;
+        vertical-align:middle;
+        overflow:hidden;
+        text-decoration:none;
+
+        
+        text-align:center;
+        cursor:pointer;
+        white-space:nowrap
+        font-size: 10px;
+    }
+}
+
+@media(min-width:600px) {
+    
+        .btn {
+        border::1px;
+        display:inline-block;
+        outline:0;
+        padding:8px 16px;
+        vertical-align:middle;
+        overflow:hidden;
+        text-decoration:none;
+
+        
+        text-align:center;
+        cursor:pointer;
+        white-space:nowrap
+        font-size: 24px;
+    }
+}
+
+@media(min-width:800px) {
+    
+        .btn {
+        border::1px;
+        display:inline-block;
+        outline:0;
+        padding:8px 16px;
+        vertical-align:middle;
+        overflow:hidden;
+        text-decoration:none;
+
+        
+        text-align:center;
+        cursor:pointer;
+        white-space:nowrap
+        font-size: 32px;
+    }
+}
+
+@media(min-width:1000px) {
+    
+        .btn {
+        border::1px;
+        display:inline-block;
+        outline:0;
+        padding:8px 16px;
+        vertical-align:middle;
+        overflow:hidden;
+        text-decoration:none;
+
+        
+        text-align:center;
+        cursor:pointer;
+        white-space:nowrap
+        font-size: 32px;
+        
+    }
+}
+
+

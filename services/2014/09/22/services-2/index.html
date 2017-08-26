@@ -46,176 +46,150 @@
 </head>
 
 	<body onload="myFunction();">
-		<!-- Navigation -->
-<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header page-scroll">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand page-scroll" href="#home">Your Awesome Site</a>
-        </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">  
-            	<li>
-                    <a class="page-scroll" href="#about">About</a>
-                </li>            
-                <li>
-                    <a class="page-scroll" href="#services">Services</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#contact">Contact</a>
-                </li>
-            </ul>
-        </div>
-        <!-- /.navbar-collapse -->
-    </div>
-    <!-- /.container -->
-</nav>
-
-
 
 		    <!-- About Section -->
 <section >
 
-        <script>
+  <script>
 
-            var sg;
-            var pg;
+      var sg;
+      var pg;
 
-            function myFunction() {
+      function myFunction() {
 
-                var x = document.getElementById("n1")
-                x.innerHTML = Math.floor((Math.random() * 5) + 0);
+          var x = document.getElementById("n1")
+          x.innerHTML = Math.floor((Math.random() * 5) + 0);
 
-                var y = document.getElementById("n2")
-                y.innerHTML = Math.floor((Math.random() * 5) + 0);
+          var y = document.getElementById("n2")
+          y.innerHTML = Math.floor((Math.random() * 5) + 0);
 
-                var s = parseFloat( x.innerHTML)  +  parseFloat(y.innerHTML);
-                document.getElementById("soma").innerHTML = s;
+          var s = parseFloat( x.innerHTML)  +  parseFloat(y.innerHTML);
+          document.getElementById("soma").innerHTML = s;
 
-                var p = x.innerHTML * y.innerHTML;
-                document.getElementById("produto").innerHTML = p;
+          var p = x.innerHTML * y.innerHTML;
+          document.getElementById("produto").innerHTML = p;
 
-                sg = s;
-                pg = p;
+          sg = s;
+          pg = p;
 
-            }
+      }
 
-            var width = 0;
+      var width = 0;
 
-            function compara() {
+      function compara() {
 
-              var Au = document.getElementById("user_A").value;
-              var Bu = document.getElementById("user_B").value;
+        var Au = document.getElementById("user_A").value;
+        var Bu = document.getElementById("user_B").value;
 
-              document.getElementById("mostra_user_A").innerHTML = Au
-              document.getElementById("mostra_user_B").innerHTML = Bu
+        document.getElementById("mostra_user_A").innerHTML = Au
+        document.getElementById("mostra_user_B").innerHTML = Bu
 
-              var somau = parseFloat(Au) + parseFloat(Bu);
-              var produ = parseFloat(Au) * parseFloat(Bu);
+        var somau = parseFloat(Au) + parseFloat(Bu);
+        var produ = parseFloat(Au) * parseFloat(Bu);
 
-              if ((somau == sg) && (produ == pg)){        
-
-
-              document.getElementById('myImage').src='img/feliz.JPG';
-
-               /* alert('Acertou! :)'); */
-
-                /*
-                var node = document.getElementById('node-id');
-                node.innerHTML('<p>some dynamic html</p>');
-                */
-
-                var elem = document.getElementById("myBar"); 
-
-                width = width + 10; 
-                elem.style.width = width + '%'; 
-                elem.innerHTML = width * 1  + '%';
-
-                document.getElementById("form_A").reset();
-                document.getElementById("form_B").reset();
-
-            } else {
-                /*   alert('Errou! :(');   */
+        if ((somau == sg) && (produ == pg)){        
 
 
-                document.getElementById("form_A").reset();
-                document.getElementById("form_B").reset();
+        document.getElementById('myImage').src='img/feliz50.jpg';
 
-                document.getElementById('myImage').src='img/triste.JPG';
+         /* alert('Acertou! :)'); */
 
-            }
+          /*
+          var node = document.getElementById('node-id');
+          node.innerHTML('<p>some dynamic html</p>');
+          */
 
-            if (width == 100) {
+          var elem = document.getElementById("myBar"); 
 
-                alert('Level 01 completed!');
+          width = width + 10; 
+          elem.style.width = width + '%'; 
+          elem.innerHTML = width * 1  + '%';
 
-                window.location="index.html";   // <<  redirecionar
+          document.getElementById("form_A").reset();
+          document.getElementById("form_B").reset();
 
-            }
-
-            }
-
-            function A0(){document.getElementById("user_A").value = "0";}
-            function A1(){document.getElementById("user_A").value = "1";}
-            function A2(){document.getElementById("user_A").value = "2";}
-            function A3(){document.getElementById("user_A").value = "3";}
-            function A4(){document.getElementById("user_A").value = "4";}
-            function A5(){document.getElementById("user_A").value = "5";}
-            function A6(){document.getElementById("user_A").value = "6";}
-            function A7(){document.getElementById("user_A").value = "7";}
-            function A8(){document.getElementById("user_A").value = "8";}
-            function A9(){document.getElementById("user_A").value = "9";}
-            function A10(){document.getElementById("user_A").value = "10";}
-            function A11(){document.getElementById("user_A").value = "11";}
-            function A12(){document.getElementById("user_A").value = "12";}
-
-            function B0(){document.getElementById("user_B").value = "0";}
-            function B1(){document.getElementById("user_B").value = "1";}
-            function B2(){document.getElementById("user_B").value = "2";}
-            function B3(){document.getElementById("user_B").value = "3";}
-            function B4(){document.getElementById("user_B").value = "4";}
-            function B5(){document.getElementById("user_B").value = "5";}
-            function B6(){document.getElementById("user_B").value = "6";}
-            function B7(){document.getElementById("user_B").value = "7";}
-            function B8(){document.getElementById("user_B").value = "8";}
-            function B9(){document.getElementById("user_B").value = "9";}
-            function B10(){document.getElementById("user_B").value = "10";}
-            function B11(){document.getElementById("user_B").value = "11";}
-            function B12(){document.getElementById("user_B").value = "12";}
-
-        </script>
+      } else {
+          /*   alert('Errou! :(');   */
 
 
+          document.getElementById("form_A").reset();
+          document.getElementById("form_B").reset();
 
-<div class="row text-center">
-  <div class="col-xs-3"></div>
-  <div class="col-xs-6">
-    <h3>Level 01</h3>
-    <div id="myProgress">
-    <div id="myBar">0%</div>
+          document.getElementById('myImage').src='img/triste50.jpg';
+
+      }
+
+      if (width == 100) {
+
+          alert('Level 01 completed!');
+
+          window.location="index.html";   // <<  redirecionar
+
+      }
+
+      }
+
+      function A0(){document.getElementById("user_A").value = "0";}
+      function A1(){document.getElementById("user_A").value = "1";}
+      function A2(){document.getElementById("user_A").value = "2";}
+      function A3(){document.getElementById("user_A").value = "3";}
+      function A4(){document.getElementById("user_A").value = "4";}
+      function A5(){document.getElementById("user_A").value = "5";}
+      function A6(){document.getElementById("user_A").value = "6";}
+      function A7(){document.getElementById("user_A").value = "7";}
+      function A8(){document.getElementById("user_A").value = "8";}
+      function A9(){document.getElementById("user_A").value = "9";}
+      function A10(){document.getElementById("user_A").value = "10";}
+      function A11(){document.getElementById("user_A").value = "11";}
+      function A12(){document.getElementById("user_A").value = "12";}
+
+      function B0(){document.getElementById("user_B").value = "0";}
+      function B1(){document.getElementById("user_B").value = "1";}
+      function B2(){document.getElementById("user_B").value = "2";}
+      function B3(){document.getElementById("user_B").value = "3";}
+      function B4(){document.getElementById("user_B").value = "4";}
+      function B5(){document.getElementById("user_B").value = "5";}
+      function B6(){document.getElementById("user_B").value = "6";}
+      function B7(){document.getElementById("user_B").value = "7";}
+      function B8(){document.getElementById("user_B").value = "8";}
+      function B9(){document.getElementById("user_B").value = "9";}
+      function B10(){document.getElementById("user_B").value = "10";}
+      function B11(){document.getElementById("user_B").value = "11";}
+      function B12(){document.getElementById("user_B").value = "12";}
+
+  </script>
+
+      <div class="row text-center" style="background-color:rgb(35,49, 64);">
+        <div class="col-xs-12">
+          <div>
+            <img style="vertical-align:middle" src="img/logo50.JPG">
+            <span class="name" align="left" style="color:white; font-size:20px">  Plus and Times </span>
+          </div>
+        </div>
+      </div>
+
+
+<hr> <!-- =============================================== -->
+
+  <div class="row text-center">
+    <div class="col-xs-3">
     </div>
-  </div>  
-  <div class="col-xs-3"></div>
-</div>
+    <div class="col-xs-6">
+      <h3>Level 01</h3>
+      <div id="myProgress">
+      <div id="myBar">0%</div>
+      </div>
+    </div>  
+    <div class="col-xs-3"></div>
+  </div>
 
 <hr> <!-- =============================================== -->
 
       <div class="row text-center" >
           <div class="col-xs-2"></div>
-          <div class="col-xs-4">
-            <h3 class="name" align="right">  A + B  = <a style="color:gray;" id="soma" >   </a></h3>
-            <h3 class="name" align="right"> A &times; B  = <a style="color:gray;" id="produto"></a></h3>
-          </div>
-          <div class="col-xs-4">
-            <img id="myImage" src="img/pensativo.jpg" align="left" class="img-responsive">
-
+          <div class="col-xs-8">
+            <h3 class="name" >  A + B  = <a style="color:gray;" id="soma" >   </a></h3>
+            <h3 class="name" > A &times; B  = <a style="color:gray;" id="produto"></a></h3>
           </div>
           <div class="col-xs-2"></div>
       </div>
@@ -227,9 +201,9 @@
         <!-- Formulário e teclados -->
         <div class="row text-center">
           
-          <div class="col-md-3 col-xs-1"></div>
+          <div class="col-md-2 col-xs-1"></div>
           
-          <div class="col-md-3 col-xs-5">
+          <div class="col-md-3 col-xs-4">
 
             <div class="row">
 
@@ -278,7 +252,16 @@
             </div>
           </div>
 
-          <div class="col-md-3 col-xs-5">
+          <div class="col-md-2 col-xs-2">
+             <div class="row text-center">
+              <img id="myImage"  src="img/pensativo50.jpg" >
+              </div>
+              <div class="row text-center">
+              <a href="#" onclick="compara(); myFunction();" class="btn btn-primary">Go</a>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-xs-4">
 
             <div class="row">
                   
@@ -323,20 +306,13 @@
             </div>
           </div>
 
-          <div class="col-md-3 col-xs-1"></div>
+          <div class="col-md-2 col-xs-1"></div>
         </div>
 
-<!-- =============================================== --> 
-<div class="row text-center">
-  <a href="#" onclick="compara(); myFunction();" class="btn btn-primary">Go</a>
-</div>
 <!-- =============================================== -->
 
     <p style="font-size:0px">A = <a id="mostra_user_A"></a></p>
     <p style="font-size:0px">B = <a id="mostra_user_B"></a></p>
-
-
-
 
       <h6 style="font-size:0px"> A  = <a style="font-size:0px" id="n1"></a></h6>
       <h6 style="font-size:0px"> B  = <a style="font-size:0px" id="n2"></a></h6>
